@@ -18,7 +18,7 @@
 You need `gcc` installed (Linux/macOS) or MinGW/WSL on Windows.
 
 ```bash
-gcc -Wall -std=c99 ringbuf.c -o ringbuf
+gcc -Wall -std=c99 Ringbuf.c -o ringbuf
 ./ringbuf
 ```
 
