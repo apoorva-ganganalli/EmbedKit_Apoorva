@@ -9,7 +9,7 @@
 
 | File | Description |
 |------|-------------|
-| `Ringbuf.c` | Circular (ring) buffer for `uint8_t` data with fixed capacity of 8 bytes |
+| `ringbuf.c` | Circular (ring) buffer for `uint8_t` data with fixed capacity of 8 bytes |
 
 ---
 
@@ -18,8 +18,8 @@
 You need `gcc` installed (Linux/macOS) or MinGW/WSL on Windows.
 
 ```bash
-gcc -Wall -std=c99 Ringbuf.c -o Ringbuf
-./Ringbuf
+gcc -Wall -std=c99 Ringbuf.c -o ringbuf
+./ringbuf
 ```
 
 Zero warnings, zero errors -- verified on gcc 11+.
@@ -60,6 +60,6 @@ Zero warnings, zero errors -- verified on gcc 11+.
 ## Notes
 
 - Uses `& (BUFFER_SIZE - 1)` instead of `% BUFFER_SIZE` for head/tail wrap-around (bonus).  
-  See comment in `Ringbuf.c` for the explanation.
+  See comment in `ringbuf.c` for the explanation.
 - All fixed-width types use `uint8_t` from `<stdint.h>` -- no plain `int` or `char` for data.
 - Constants defined with `#define` -- no magic numbers in logic.
