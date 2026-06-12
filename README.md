@@ -1,6 +1,6 @@
 # EmbedKit_Apoorva
 
-**Author:** Apoorva  
+**Author:** Apoorva Shreeshail Ganganalli 
 **Assignment:** Embedded Developer Fresher | Embed Square Solutions Pvt. Ltd.
 
 ---
